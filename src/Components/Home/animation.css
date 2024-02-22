@@ -1,0 +1,78 @@
+.word1 {
+  animation: type 2s steps(60, end);
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 5.5em;
+}
+
+.word2 {
+  animation: type1 2s steps(60, end);
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 4.5em;
+}
+
+.word3 {
+  animation: type2 2s steps(60, end);
+
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 5em;
+}
+
+.word4 {
+  animation-name: word-4;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+.word5 {
+  animation-name: word-5;
+  animation-duration: 2s;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@keyframes type1 {
+  from {
+    width: 0;
+  }
+}
+@keyframes type2 {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes word-4 {
+  0% {
+    visibility: hidden;
+    margin-left: 50px;
+  }
+  20% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes word-5 {
+  0% {
+    visibility: hidden;
+    margin-top: 7%;
+  }
+  20% {
+    visibility: hidden;
+  }
+
+  100% {
+    margin-top: 0%;
+    transform: translateY(10%);
+  }
+}

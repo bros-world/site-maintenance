@@ -1,0 +1,51 @@
+.word6 {
+  animation-name: word-6;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.word7 {
+  animation-name: word-7;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.word8 {
+  animation-name: word-8;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes word-6 {
+  0% {
+    visibility: hidden;
+    margin-left: -600px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes word-7 {
+  0% {
+    visibility: hidden;
+    margin-left: 1300px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes word-8 {
+  0% {
+    visibility: hidden;
+    margin-left: -1500px;
+  }
+
+  100% {
+    margin-left: 0px;
+    justify-content: space-between;
+  }
+}
