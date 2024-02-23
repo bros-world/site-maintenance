@@ -138,6 +138,7 @@ const Home = () => {
         <Box
           sx={{
             display: "flex",
+            flexDirection: { lg: "row", md: "row", sm: "column", xs: "column" },
             flexWrap: "wrap",
             gap: "15px",
             alignItems: "center"

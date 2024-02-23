@@ -76,3 +76,11 @@
     transform: translateY(10%);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .word1,
+  .word2,
+  .word3 {
+    width: auto;
+  }
+}
