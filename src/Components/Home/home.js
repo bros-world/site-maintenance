@@ -169,7 +169,7 @@ const Home = () => {
         </Box>
         <Typography
           className={word5bool ? "word5" : ""}
-          variant="h5"
+          variant="h6"
           sx={{
             maxWidth: { lg: "50%", xs: "auto" },
             color: theme.palette.secondary.main,

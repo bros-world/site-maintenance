@@ -59,7 +59,7 @@ const Ourservice = () => {
           sm: "center",
           xs: "center"
         },
-        gap: "10px"
+        gap: "15px"
       }}
     >
       {services.map((e, index) => {

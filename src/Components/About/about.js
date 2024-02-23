@@ -9,7 +9,7 @@ const About = () => {
       direction={"column"}
       spacing={4}
       sx={{
-        paddingBlock: { lg: "130px", xs: "60px" },
+        paddingBlock: { lg: "100px", xs: "60px" },
         textAlign: { lg: "left", md: "left", sm: "left", xs: "center" },
         pl: { lg: 10, md: 5, sm: 5, xs: 2 },
         pr: { lg: 10, md: 5, sm: 5, xs: 2 }
@@ -19,7 +19,7 @@ const About = () => {
         Hi, We are Brosworld
       </Typography>
       <Typography
-        variant="h5"
+        variant="h6"
         sx={{ width: { lg: "65%", md: "100%", sm: "100%", xs: "100%" } }}
       >
         Welcome to Brosworld!, where technology meets innovation to propel your

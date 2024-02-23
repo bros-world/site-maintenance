@@ -47,20 +47,25 @@ const theme = createTheme({
   typography: {
     fontFamily: "montserrat",
     h1: {
-      color: "#FFFFFF"
+      color: "#FFFFFF",
+      fontSize: "4rem"
     },
     h2: {
-      color: "#fff"
+      color: "#fff",
+      fontSize: "3rem"
     },
     h3: {
-      color: "#000"
+      color: "#000",
+      fontSize: "2rem"
     },
 
     h5: {
-      color: "#000"
+      color: "#000",
+      fontSize: "1.5rem"
     },
     h6: {
-      color: "#000"
+      color: "#000",
+      fontSize: "1.1rem"
     }
   }
 });

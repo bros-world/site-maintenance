@@ -53,6 +53,7 @@ const Chooseus = () => {
         display: "flex",
         flexDirection: "column",
         gap: "50px",
+        paddingInline: "10px",
         mt: { lg: 15, md: 10, sm: 10, xs: 5 },
         mb: 5,
         pl: { lg: 10, md: 5, sm: 5, xs: 1 },
