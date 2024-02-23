@@ -149,17 +149,18 @@ const Home = () => {
             variant="h1"
             sx={{ visibility: word3bool ? "visible" : "hidden" }}
           >
-            Business
+            Business.
           </Typography>
           <Button
             variant="outlined"
             endIcon={<ArrowForwardIcon />}
             sx={{
               height: "fit-content",
-              pl: { lg: 2, md: 2, sm: 2 },
-              pr: { lg: 2, md: 2, sm: 2 },
-              pt: { lg: 2, md: 1.5, sm: 1.5 },
-              pb: { lg: 2, md: 1.5, sm: 1.5 },
+              marginTop: "7px",
+              pl: { lg: 1, md: 2, sm: 2 },
+              pr: { lg: 1, md: 2, sm: 2 },
+              pt: { lg: 1, md: 1.5, sm: 1.5 },
+              pb: { lg: 1, md: 1.5, sm: 1.5 },
               margin: { lg: "unset", sm: "unset", md: "unset", xs: "auto" },
               visibility: word4bool ? "visible" : "hidden"
             }}

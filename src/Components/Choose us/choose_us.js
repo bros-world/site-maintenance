@@ -62,7 +62,7 @@ const Chooseus = () => {
       id="chooseus"
     >
       <Box className={word1bool ? "word6" : ""}>
-        <Typography variant="h1">Choos Us ?</Typography>
+        <Typography variant="h1">Choose Us ?</Typography>
       </Box>
       <Box className={word2bool ? "word7" : ""}>
         <OurTeam />
