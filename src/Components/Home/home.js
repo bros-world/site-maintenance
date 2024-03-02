@@ -40,24 +40,21 @@ const Home = () => {
     }, 1000);
   }
 
-  function getOffset() {
-    $(window).scroll(function() {
-      var offset = $("#home").offset().top;
-      if ($(window).scrollTop() == offset) {
-        setoffsetbool(!offsetbool);
-      }
-    });
-  }
-  useEffect(
-    () => {
-      window.scrollTo(0, 0);
-      var video = document.getElementById("video");
-      video.play();
-      getOffset();
-      animation();
-    },
-    [offsetbool]
-  );
+  // function getOffset() {
+  //   $(window).scroll(function() {
+  //     var offset = $("#home").offset().top;
+  //     if ($(window).scrollTop() == offset) {
+  //       setoffsetbool(!offsetbool);
+  //     }
+  //   });
+  // }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    var video = document.getElementById("video");
+    video.play();
+    // getOffset();
+    animation();
+  }, []);
 
   return (
     <Box

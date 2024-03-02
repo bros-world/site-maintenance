@@ -11,18 +11,11 @@ const Contact = () => {
     window.scrollTo(0, 0);
     var video = document.getElementById("video-1");
     video.play();
-    getOffset();
   }, []);
-  function getOffset() {
-    $(window).scroll(function() {
-      var offset = $("#contactus").offset().top;
-      console.log(offset);
-    });
-  }
+
   return (
     <Box
       sx={{
-        paddingBlock: { lg: "100px", md: "60px", sm: "60px", xs: "20px" },
         pl: { lg: 10, md: 0, sm: 0, xs: 0 },
         pr: { lg: 10, md: 0, sm: 0, xs: 0 }
       }}

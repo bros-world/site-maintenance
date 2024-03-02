@@ -1,0 +1,32 @@
+.story {
+  animation-name: story;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.story-img {
+  animation-name: story-img;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes story-img {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes story {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

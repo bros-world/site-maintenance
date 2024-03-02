@@ -1,18 +1,19 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import React, { useRef, useState, useEffect } from "react";
-import AboutImg from "../../Assets/Images/about.png";
+import React, { useState, useEffect, useRef } from "react";
+import StoryImg from "../../Assets/Images/story.png";
 import "./animation.css";
 
-const About = () => {
+const Ourstory = () => {
   const theme = useTheme();
   const [isVisible, setIsVisible] = useState(false);
-  const aboutRef = useRef(null);
+  const storyRef = useRef(null);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         // Update state when target element comes into view
         if (entry.isIntersecting) {
           setIsVisible(true);
+
           // Disconnect observer to stop observing once animation is triggered
           observer.disconnect();
         }
@@ -20,26 +21,27 @@ const About = () => {
       { threshold: 0.5 }
     ); // Adjust threshold as needed
 
-    if (aboutRef.current) {
-      observer.observe(aboutRef.current);
+    if (storyRef.current) {
+      observer.observe(storyRef.current);
     }
 
     // Cleanup function
     return () => {
-      if (aboutRef.current) {
-        observer.unobserve(aboutRef.current);
+      if (storyRef.current) {
+        observer.unobserve(storyRef.current);
       }
     };
   }, []);
+
   return (
-    <Box>
-      <Box ref={aboutRef}>
+    <Box sx={{ paddingBlock: "20px" }}>
+      <Box ref={storyRef}>
         {isVisible
           ? <Box
               sx={{
                 display: "flex",
                 flexWrap: "wrap",
-                paddingBlock: { lg: "80px", xs: "60px" },
+                // paddingBlock: { lg: "0px", xs: "10px" },
                 paddingInline: {
                   lg: "100px",
                   xs: "10px",
@@ -48,45 +50,42 @@ const About = () => {
                 },
                 alignItems: "center",
                 justifyContent: "space-between",
-                flexDirection: {
-                  xs: "column-reverse",
-                  lg: "row",
-                  md: "row",
-                  sm: "row"
-                },
-                gap: { lg: "100px", xs: "20px" }
+                gap: { lg: "100px" }
               }}
             >
+              <Box
+                sx={{ width: { lg: "41%", sm: "41%", md: "41%", xs: "100%" } }}
+                className="story-img"
+              >
+                <Box
+                  component="img"
+                  src={StoryImg}
+                  sx={{ width: "100%", mt: { xs: 4 } }}
+                />
+              </Box>
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
                   gap: "30px",
-                  width: { lg: "50%", sm: "50%", md: "50%", xs: "100%" }
+                  width: { lg: "50%", sm: "50%", md: "50%", xs: "100%" },
+                  mt: 3
                 }}
-                className="about"
+                className="story"
               >
                 <Typography
                   variant="h1"
-                  sx={{ color: theme.palette.secondary.dark, mt: 3 }}
+                  sx={{ color: theme.palette.secondary.dark }}
                 >
-                  About Us
+                  Our Story
                 </Typography>
                 <Typography variant="h5">
-                  Our Mission: To empower businesses through high-quality,
-                  customized software solutions that enhance efficiency,
-                  productivity, and profitability.
+                  Brosworld was founded on the belief that technology can
+                  transform the way businesses operate. With years of industry
+                  experience and a passion for excellence, we have grown into a
+                  leading software services provider, trusted by clients across
+                  various sectors.
                 </Typography>
-              </Box>
-              <Box
-                sx={{ width: { lg: "41%", sm: "41%", md: "41%", xs: "100%" } }}
-                className="about-img"
-              >
-                <Box
-                  component="img"
-                  src={AboutImg}
-                  sx={{ width: "100%", mt: { xs: 4 } }}
-                />
               </Box>
             </Box>
           : ""}
@@ -95,4 +94,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Ourstory;

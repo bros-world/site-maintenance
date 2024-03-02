@@ -1,10 +1,11 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
-import cloud from "../../Assets/Icons/cloud.png";
-import mobile from "../../Assets/Icons/mobile.png";
-import uiux from "../../Assets/Icons/uiux.png";
-import itconsulting from "../../Assets/Icons/itconsulting.png";
-import csd from "../../Assets/Icons/csd.png";
+// import cloud from "../../Assets/Icons/cloud.png";
+import cloud from "../../Assets/gif/clouds.gif";
+import computer from "../../Assets/gif/computer.gif";
+import consultation from "../../Assets/gif/consultation.gif";
+import settings from "../../Assets/gif/settings.gif";
+import smartphone from "../../Assets/gif/smartphone.gif";
 import Card from "./Card";
 
 const Ourservice = () => {
@@ -23,25 +24,25 @@ const Ourservice = () => {
     },
     {
       title: "Mobile App Development",
-      imageurl: cloud,
+      imageurl: smartphone,
       description:
         "Engage your audience on the go with our custom mobile applications, offering seamless user experiences across iOS and Android platforms."
     },
     {
       title: "UI/UX Design",
-      imageurl: cloud,
+      imageurl: computer,
       description:
         "Transform your ideas into stunning realities with our user-centered design services, ensuring intuitive, engaging, and effective user experiences."
     },
     {
       title: "IT Consulting",
-      imageurl: cloud,
+      imageurl: consultation,
       description:
         "Navigate your digital transformation journey with our expert IT consulting services, guiding you through strategy development, system integration, and operational excellence."
     },
     {
       title: "Custom Software Development",
-      imageurl: cloud,
+      imageurl: settings,
       description:
         "Tailor-made software solutions designed to meet your specific business requirements, ensuring functionality, scalability, and performance."
     }
