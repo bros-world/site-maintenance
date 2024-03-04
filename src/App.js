@@ -1,6 +1,6 @@
 import "./App.css";
 import Footer from "./Components/Footer/footer";
-import { Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import About from "./Components/About/about";
 import Ourservice from "./Components/Services/service";
 import Contact from "./Components/Contact/contact";
@@ -11,7 +11,7 @@ import Ourstory from "./Components/Story/Ourstory";
 
 function App() {
   return (
-    <Box>
+    <Stack>
       <Home />
       <Content />
       <Ourservice />
@@ -20,7 +20,7 @@ function App() {
       <Chooseus />
       <Contact />
       <Footer />
-    </Box>
+    </Stack>
   );
 }
 

@@ -2,11 +2,13 @@
   animation-name: story;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  transition: opacity 0.3s ease;
 }
 .story-img {
   animation-name: story-img;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  transition: opacity 0.3s ease;
 }
 
 @keyframes story-img {

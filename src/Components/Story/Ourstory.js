@@ -18,7 +18,7 @@ const Ourstory = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 1 }
     ); // Adjust threshold as needed
 
     if (storyRef.current) {
@@ -34,7 +34,7 @@ const Ourstory = () => {
   }, []);
 
   return (
-    <Box sx={{ paddingBlock: "20px" }}>
+    <Box sx={{ paddingBlock: "20px", overflowY: "auto" }}>
       <Box ref={storyRef}>
         {isVisible
           ? <Box

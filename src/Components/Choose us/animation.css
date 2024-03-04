@@ -2,18 +2,21 @@
   animation-name: word-6;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  transition: opacity 0.3s ease;
 }
 
 .word7 {
   animation-name: word-7;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  transition: opacity 0.3s ease;
 }
 
 .word8 {
   animation-name: word-8;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  transition: opacity 0.3s ease;
 }
 
 @keyframes word-6 {

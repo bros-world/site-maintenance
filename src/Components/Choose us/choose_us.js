@@ -38,7 +38,7 @@ const Chooseus = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 1.0 }
     ); // Adjust threshold as needed
 
     if (targetRef.current) {
@@ -54,7 +54,7 @@ const Chooseus = () => {
   }, []);
 
   return (
-    <Box>
+    <Box sx={{ overflowY: "auto" }}>
       <Box ref={targetRef} sx={{ paddingBlock: { lg: "100px", xs: "20px" } }}>
         {isVisible
           ? <Box

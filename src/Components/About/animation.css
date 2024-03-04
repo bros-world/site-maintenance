@@ -2,11 +2,13 @@
   animation-name: about;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  transition: opacity 0.3s ease;
 }
 .about-img {
   animation-name: about-img;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  transition: opacity 0.3s ease;
 }
 
 @keyframes about {

@@ -1,5 +1,5 @@
 .word1 {
-  animation: type 2s steps(60, end);
+  animation: type 1s steps(60, end);
   margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -7,7 +7,7 @@
 }
 
 .word2 {
-  animation: type1 2s steps(60, end);
+  animation: type1 1s steps(60, end);
   margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -15,8 +15,7 @@
 }
 
 .word3 {
-  animation: type2 2s steps(60, end);
-
+  animation: type2 1s steps(60, end);
   margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -25,12 +24,13 @@
 
 .word4 {
   animation-name: word-4;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: backwards;
 }
 .word5 {
   animation-name: word-5;
-  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes type {

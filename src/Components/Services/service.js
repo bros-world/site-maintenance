@@ -61,7 +61,7 @@ const Ourservice = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 1 }
     ); // Adjust threshold as needed
 
     if (serviceRef.current) {
@@ -77,7 +77,7 @@ const Ourservice = () => {
   }, []);
 
   return (
-    <Box sx={{ paddingBlock: "20px" }}>
+    <Box sx={{ paddingBlock: { lg: "20px", xs: "50px" }, overflowY: "auto" }}>
       <Box ref={serviceRef}>
         {isVisible
           ? <Box

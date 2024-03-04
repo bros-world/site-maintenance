@@ -17,7 +17,7 @@ const About = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { root: null, rootMargin: "0px", threshold: 1 }
     ); // Adjust threshold as needed
 
     if (aboutRef.current) {
@@ -32,20 +32,19 @@ const About = () => {
     };
   }, []);
   return (
-    <Box>
+    <Box
+      sx={{
+        paddingBlock: { lg: "100px", xs: "20px" },
+        paddingInline: { lg: "100px", xs: "10px", sm: "60px", md: "80px" },
+        overflowY: "auto"
+      }}
+    >
       <Box ref={aboutRef}>
         {isVisible
           ? <Box
               sx={{
                 display: "flex",
                 flexWrap: "wrap",
-                paddingBlock: { lg: "80px", xs: "60px" },
-                paddingInline: {
-                  lg: "100px",
-                  xs: "10px",
-                  sm: "60px",
-                  md: "80px"
-                },
                 alignItems: "center",
                 justifyContent: "space-between",
                 flexDirection: {

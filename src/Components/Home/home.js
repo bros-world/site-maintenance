@@ -33,11 +33,11 @@ const Home = () => {
             setword4bool(true);
             setTimeout(() => {
               setword5bool(true);
-            }, 2000);
-          }, 2000);
-        }, 2000);
-      }, 2000);
-    }, 1000);
+            }, 1200);
+          }, 1200);
+        }, 1200);
+      }, 1200);
+    }, 200);
   }
 
   useEffect(() => {
@@ -53,8 +53,7 @@ const Home = () => {
         textAlign: "center",
         width: "100%",
         position: "relative",
-        pb: { lg: 24, xs: 20 },
-        pt: { lg: 24, xs: 20 }
+        paddingBlock: "180px"
       }}
       id="home"
     >
