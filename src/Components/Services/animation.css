@@ -1,0 +1,16 @@
+.services {
+  animation-name: services;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes services {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

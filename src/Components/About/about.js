@@ -54,7 +54,7 @@ const About = () => {
                   md: "row",
                   sm: "row"
                 },
-                gap: { lg: "100px", xs: "20px" }
+                gap: { lg: "90px", xs: "20px" }
               }}
             >
               <Box

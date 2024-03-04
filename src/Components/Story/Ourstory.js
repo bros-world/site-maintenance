@@ -41,7 +41,6 @@ const Ourstory = () => {
               sx={{
                 display: "flex",
                 flexWrap: "wrap",
-                // paddingBlock: { lg: "0px", xs: "10px" },
                 paddingInline: {
                   lg: "100px",
                   xs: "10px",
@@ -50,7 +49,7 @@ const Ourstory = () => {
                 },
                 alignItems: "center",
                 justifyContent: "space-between",
-                gap: { lg: "100px" }
+                gap: { lg: "90px" }
               }}
             >
               <Box

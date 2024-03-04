@@ -1,14 +1,16 @@
-import { Box, Stack, Typography } from "@mui/material";
-import React, { useState } from "react";
-// import cloud from "../../Assets/Icons/cloud.png";
+import { Box } from "@mui/material";
+import React, { useState, useEffect, useRef } from "react";
 import cloud from "../../Assets/gif/clouds.gif";
 import computer from "../../Assets/gif/computer.gif";
 import consultation from "../../Assets/gif/consultation.gif";
 import settings from "../../Assets/gif/settings.gif";
 import smartphone from "../../Assets/gif/smartphone.gif";
 import Card from "./Card";
+import "./animation.css";
 
 const Ourservice = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const serviceRef = useRef(null);
   const [services, setservices] = useState([
     {
       title: "Our Services",
@@ -47,31 +49,65 @@ const Ourservice = () => {
         "Tailor-made software solutions designed to meet your specific business requirements, ensuring functionality, scalability, and performance."
     }
   ]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Update state when target element comes into view
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+
+          // Disconnect observer to stop observing once animation is triggered
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.5 }
+    ); // Adjust threshold as needed
+
+    if (serviceRef.current) {
+      observer.observe(serviceRef.current);
+    }
+
+    // Cleanup function
+    return () => {
+      if (serviceRef.current) {
+        observer.unobserve(serviceRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <Box
-      sx={{
-        pl: { lg: 10, md: 5, sm: 5, xs: 2 },
-        pr: { lg: 10, md: 5, sm: 5, xs: 2 },
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: {
-          lg: "start",
-          md: "center",
-          sm: "center",
-          xs: "center"
-        },
-        gap: "6px"
-      }}
-    >
-      {services.map((e, index) => {
-        return (
-          <Card
-            title={e.title}
-            imageurl={e.imageurl}
-            description={e.description}
-          />
-        );
-      })}
+    <Box sx={{ paddingBlock: "20px" }}>
+      <Box ref={serviceRef}>
+        {isVisible
+          ? <Box
+              sx={{
+                pl: { lg: 10, md: 5, sm: 5, xs: 2 },
+                pr: { lg: 10, md: 5, sm: 5, xs: 2 },
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: {
+                  lg: "start",
+                  md: "center",
+                  sm: "center",
+                  xs: "center"
+                },
+                gap: "6px"
+              }}
+              className="services"
+            >
+              {services.map((e, index) => {
+                return (
+                  <Card
+                    title={e.title}
+                    imageurl={e.imageurl}
+                    description={e.description}
+                  />
+                );
+              })}
+            </Box>
+          : ""}
+      </Box>
     </Box>
   );
 };
