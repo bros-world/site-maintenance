@@ -144,10 +144,10 @@ const Home = () => {
             sx={{
               height: "fit-content",
               marginTop: "7px",
-              pl: { lg: 1, md: 2, sm: 2 },
-              pr: { lg: 1, md: 2, sm: 2 },
-              pt: { lg: 1, md: 1.5, sm: 1.5 },
-              pb: { lg: 1, md: 1.5, sm: 1.5 },
+              pl: { lg: 3, md: 2, sm: 2 },
+              pr: { lg: 3, md: 2, sm: 2 },
+              pt: { lg: 1.5, md: 1.5, sm: 1.5 },
+              pb: { lg: 1.5, md: 1.5, sm: 1.5 },
               margin: { lg: "unset", sm: "unset", md: "unset", xs: "auto" },
               visibility: word4bool ? "visible" : "hidden"
             }}

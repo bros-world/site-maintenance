@@ -2,6 +2,7 @@ import { Box, Button, Typography } from "@mui/material";
 import React, { useState, useEffect, useRef } from "react";
 import OurTeam from "./Leads";
 import { useTheme } from "@emotion/react";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./animation.css";
 
 const Chooseus = () => {
@@ -105,6 +106,7 @@ const Chooseus = () => {
                     pb: 2,
                     pt: 2
                   }}
+                  endIcon={<ArrowForwardIcon />}
                 >
                   Let's talk
                 </Button>

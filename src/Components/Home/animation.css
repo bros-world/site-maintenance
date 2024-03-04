@@ -77,10 +77,47 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) {
   .word1,
   .word2,
   .word3 {
-    width: auto;
+    width: 7em;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .word1,
+  .word2,
+  .word3 {
+    width: 9em;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .word1,
+  .word2,
+  .word3 {
+    width: 10em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .word1,
+  .word2,
+  .word3 {
+    width: 14em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .word1,
+  .word2,
+  .word3 {
+    width: 5.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .word1,
+  .word2,
+  .word3 {
+    width: 5.1em;
   }
 }
