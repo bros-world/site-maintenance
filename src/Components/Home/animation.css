@@ -81,7 +81,7 @@
   .word1,
   .word2,
   .word3 {
-    width: 7em;
+    width: 8em;
   }
 }
 @media only screen and (min-width: 375px) {
