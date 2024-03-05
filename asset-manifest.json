@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/site-maintenance/static/css/main.98e8e7a3.css",
+    "main.js": "/site-maintenance/static/js/main.dff82398.js",
+    "static/js/453.83bb6af4.chunk.js": "/site-maintenance/static/js/453.83bb6af4.chunk.js",
+    "static/media/contact.mp4": "/site-maintenance/static/media/contact.4a55517ce5a42ecc3992.mp4",
+    "static/media/settings.gif": "/site-maintenance/static/media/settings.4b697abdef888354b513.gif",
+    "static/media/clouds.gif": "/site-maintenance/static/media/clouds.a15e38a8260ca6b59e23.gif",
+    "static/media/about.png": "/site-maintenance/static/media/about.ceea04d2711c8a919606.png",
+    "static/media/story.png": "/site-maintenance/static/media/story.c948146f3b5fc62e141f.png",
+    "static/media/consultation.gif": "/site-maintenance/static/media/consultation.b7756e5d0ad4d331832b.gif",
+    "static/media/computer.gif": "/site-maintenance/static/media/computer.d011518199ca2e2f03e9.gif",
+    "static/media/smartphone.gif": "/site-maintenance/static/media/smartphone.3aa540737e7c3c3b50b3.gif",
+    "index.html": "/site-maintenance/index.html",
+    "main.98e8e7a3.css.map": "/site-maintenance/static/css/main.98e8e7a3.css.map",
+    "main.dff82398.js.map": "/site-maintenance/static/js/main.dff82398.js.map",
+    "453.83bb6af4.chunk.js.map": "/site-maintenance/static/js/453.83bb6af4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98e8e7a3.css",
+    "static/js/main.dff82398.js"
+  ]
+}
