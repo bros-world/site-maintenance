@@ -1,25 +1,25 @@
 .word1 {
-  animation: type 1s steps(60, end);
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 5.5em;
+  animation: wordOneFade 2s;
+  -webkit-animation: wordOneFade 2s;
+  -moz-animation: wordOneFade 2s;
+  -o-animation: wordOneFade 2s;
+  -ms-animation: wordOneFade 2s;
 }
 
 .word2 {
-  animation: type1 1s steps(60, end);
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 4.5em;
+  animation: wordTwoFade 2s;
+  -webkit-animation: wordTwoFade 2s;
+  -moz-animation: wordTwoFade 2s;
+  -o-animation: wordTwoFade 2s;
+  -ms-animation: wordTwoFade 2s;
 }
 
 .word3 {
-  animation: type2 1s steps(60, end);
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 5em;
+  animation: wordThreeFade 2s;
+  -webkit-animation: wordThreeFade 2s;
+  -moz-animation: wordThreeFade 2s;
+  -o-animation: wordThreeFade 2s;
+  -ms-animation: wordThreeFade 2s;
 }
 
 .word4 {
@@ -31,22 +31,6 @@
   animation-name: word-5;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-}
-
-@keyframes type {
-  from {
-    width: 0;
-  }
-}
-@keyframes type1 {
-  from {
-    width: 0;
-  }
-}
-@keyframes type2 {
-  from {
-    width: 0;
-  }
 }
 
 @keyframes word-4 {
@@ -76,48 +60,137 @@
     transform: translateY(10%);
   }
 }
-
-@media only screen and (min-width: 320px) {
-  .word1,
-  .word2,
-  .word3 {
-    width: 8em;
+@keyframes wordOneFade {
+  0% {
+    opacity: 0;
   }
-}
-@media only screen and (min-width: 375px) {
-  .word1,
-  .word2,
-  .word3 {
-    width: 9em;
-  }
-}
-@media only screen and (min-width: 425px) {
-  .word1,
-  .word2,
-  .word3 {
-    width: 10em;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .word1,
-  .word2,
-  .word3 {
-    width: 14em;
+  100% {
+    opacity: 1;
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .word1,
-  .word2,
-  .word3 {
-    width: 5.1em;
+@-moz-keyframes wordOneFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .word1,
-  .word2,
-  .word3 {
-    width: 5.1em;
+@-webkit-keyframes wordOneFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes wordOneFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes wordOneFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wordTwoFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes wordTwoFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes wordTwoFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes wordTwoFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes wordTwoFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wordThreeFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes wordThreeFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes wordThreeFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes wordThreeFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes wordThreeFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

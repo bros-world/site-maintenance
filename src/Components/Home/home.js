@@ -9,7 +9,6 @@ import $ from "jquery";
 
 const Home = () => {
   const theme = useTheme();
-  const [offsetbool, setoffsetbool] = useState(false);
   const [word1bool, setword1bool] = useState(false);
   const [word2bool, setword2bool] = useState(false);
   const [word3bool, setword3bool] = useState(false);
@@ -148,7 +147,7 @@ const Home = () => {
               pr: { lg: 3, md: 2, sm: 2 },
               pt: { lg: 1.5, md: 1.5, sm: 1.5 },
               pb: { lg: 1.5, md: 1.5, sm: 1.5 },
-              margin: { lg: "unset", sm: "unset", md: "unset", xs: "auto" },
+              margin: { lg: "unset", sm: "auto", md: "unset", xs: "auto" },
               visibility: word4bool ? "visible" : "hidden"
             }}
             className={word4bool ? "word4" : ""}

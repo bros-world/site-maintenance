@@ -34,7 +34,7 @@ const About = () => {
   return (
     <Box
       sx={{
-        paddingBlock: { lg: "120px", xs: "20px" },
+        paddingBlock: { lg: "80px", xs: "20px" },
         paddingInline: { lg: "100px", xs: "10px", sm: "60px", md: "80px" },
         overflowY: "auto"
       }}
