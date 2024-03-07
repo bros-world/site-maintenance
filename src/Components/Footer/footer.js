@@ -38,7 +38,12 @@ const Footer = () => {
         >
           <Box sx={{ display: "flex", gap: "10px", alignItems: "center" }}>
             <Box component="img" src={Logo} />
-            <Typography variant="h6">Brosworld</Typography>
+            <Typography
+              variant="h5"
+              sx={{ color: theme.palette.secondary.main }}
+            >
+              Brosworld
+            </Typography>
           </Box>
           <Box sx={{ pt: 1, width: "300px" }}>
             <Typography variant="h6">

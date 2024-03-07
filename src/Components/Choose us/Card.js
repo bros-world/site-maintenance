@@ -10,6 +10,7 @@ const Card = props => {
         background: props.title == "Our Services" ? "transparent" : "#FFFFFF",
         p: 4,
         minWidth: { lg: "370px", md: "370px", sm: "100%", xs: "100%" },
+        marginLeft: { lg: "0px", md: "0px", sm: "0px", xs: "70px" },
         borderRadius: "12px",
         flex: "auto"
       }}

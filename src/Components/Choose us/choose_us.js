@@ -88,16 +88,19 @@ const Chooseus = () => {
               <Box
                 sx={{
                   display: "flex",
-                  gap: "12px",
+                  gap: "14px",
                   flexWrap: "wrap",
                   alignItems: "center"
                 }}
                 className={word3bool ? "word8" : ""}
               >
-                <Typography variant="h1">World</Typography>
+                <Typography variant="h1">Brosworld</Typography>
                 <Typography
                   variant="h5"
-                  sx={{ color: theme.palette.secondary.main }}
+                  sx={{
+                    color: theme.palette.secondary.main,
+                    maxWidth: { lg: "50%", xs: "100%", sm: "50%", md: "50%" }
+                  }}
                 >
                   Trusted by startups and world largest companies
                 </Typography>
