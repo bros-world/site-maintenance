@@ -56,7 +56,12 @@ const Chooseus = () => {
 
   return (
     <Box sx={{ overflowY: "auto" }}>
-      <Box ref={targetRef} sx={{ paddingBlock: { lg: "100px", xs: "20px" } }}>
+      <Box
+        ref={targetRef}
+        sx={{
+          paddingBlock: { lg: "50px", md: "0px", sm: "0px", xs: "20px" }
+        }}
+      >
         {isVisible
           ? <Box
               sx={{

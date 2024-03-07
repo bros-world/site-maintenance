@@ -77,7 +77,12 @@ const Ourservice = () => {
   }, []);
 
   return (
-    <Box sx={{ paddingBlock: { lg: "0px", xs: "50px" }, overflowY: "auto" }}>
+    <Box
+      sx={{
+        paddingBlock: { lg: "0px", sm: "0px", ms: "0px", xs: "10px" },
+        overflowY: "auto"
+      }}
+    >
       <Box ref={serviceRef}>
         {isVisible
           ? <Box

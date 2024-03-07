@@ -14,7 +14,7 @@ const Footer = () => {
       sx={{
         background: theme.palette.primary.light,
         paddingBlock: { lg: "80px", sm: "60px", xs: "40px" },
-        mt: { lg: 20, xs: 10 },
+        mt: { lg: 10, xs: 10 },
         pl: { lg: 10, md: 5, sm: 5, xs: 2 },
         pr: { lg: 10, md: 5, sm: 5, xs: 2 }
       }}

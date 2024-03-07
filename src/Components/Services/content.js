@@ -9,7 +9,7 @@ const Content = () => {
       direction={"column"}
       spacing={4}
       sx={{
-        paddingBlock: { lg: "100px", xs: "60px" },
+        paddingBlock: { lg: "80px", md: "50px", sm: "50px", xs: "40px" },
         textAlign: { lg: "left", md: "left", sm: "left", xs: "center" },
         pl: { lg: 10, md: 5, sm: 5, xs: 2 },
         pr: { lg: 10, md: 5, sm: 5, xs: 2 }

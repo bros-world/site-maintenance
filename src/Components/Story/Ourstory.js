@@ -34,7 +34,12 @@ const Ourstory = () => {
   }, []);
 
   return (
-    <Box sx={{ paddingBlock: "80px", overflowY: "auto" }}>
+    <Box
+      sx={{
+        paddingBlock: { lg: "50px", md: "50px", sm: "50px", xs: "10px" },
+        overflowY: "auto"
+      }}
+    >
       <Box ref={storyRef}>
         {isVisible
           ? <Box
